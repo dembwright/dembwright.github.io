@@ -1,0 +1,9 @@
+/* style.css */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, #4f93ce, #285a99);
+}
+
