@@ -1,4 +1,8 @@
-# Podcasts
+---
+layout: topic
+title: "Podcasts"
+permalink: /podcasts/
+---
 Some of the podcasts I listen to frequently.
 
 ## [Hard Fork](./Hard-Fork/)
@@ -15,3 +19,4 @@ I like this podcast to understand the perspective of different lawyers and their
 I like this podcast to hear global economists talk about their research and strategies.
 ## [Extras](./Extras)
 These are some episodes produced by people whom I do not listen to consistently. 
+

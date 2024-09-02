@@ -1,0 +1,106 @@
+# Basic Site Settings
+title: "Ellis Wright"
+description: "Follow my interests."
+baseurl: "" # If your site is hosted at a subpath, specify that here, e.g., /blog
+url: "https://dembwright.github.io" # The base URL of your site
+author: "Ellis Wright"
+
+# Build Settings
+markdown: kramdown
+theme: minima # Using a base theme if needed; customize it with your own styles
+plugins:
+  - jekyll-feed # Optional: Adds RSS feed support
+  - jekyll-seo-tag # Optional: Enhances SEO with meta tags
+  - jekyll-paginate
+
+# Permalinks
+permalink: pretty # This makes the URLs cleaner (no .html at the end)
+
+# Navigation (Optional: can use for dynamic navigation)
+nav_links:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+  - title: "AI Interests"
+    url: "/ai-interests/"
+  - title: "Podcasts"
+    url: "/podcasts/"
+  - title: "Civic Tech"
+    url: "/civic-tech/"
+  - title: "Blogs"
+    url: "/blogs/"
+
+# Defaults: These settings apply to all documents unless overridden
+defaults:
+  - scope:
+      path: "" # Apply to all files
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Ellis Wright"
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "default"
+
+# Collections: Define if you have structured content that needs to be handled as a collection
+collections:
+  ai_interests:
+    output: true
+    permalink: /ai-interests/:path/
+  podcasts:
+    output: true
+    permalink: /podcasts/:path/
+  civic_tech:
+    output: true
+    permalink: /civic-tech/:path/
+  blogs:
+    output: true
+    permalink: /blogs/:path/
+
+# Pagination (Optional: for paginating long lists of posts/pages)
+paginate: 5
+paginate_path: "/page:num/"
+
+# Social Media Links (Optional: Add links for icons in footer or elsewhere)
+social_links:
+  - title: "GitHub"
+    url: "https://github.com/yourusername"
+  - title: "Twitter"
+    url: "https://twitter.com/yourusername"
+  - title: "LinkedIn"
+    url: "https://linkedin.com/in/yourusername"
+
+# Site-wide Variables (Optional: Customize based on site needs)
+social:
+  email: "ewright5200@gmail.com"
+  github: dembwright
+
+# Kramdown Options for Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Include and Exclude Options
+include:
+  - _pages
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Theme-specific configuration (if using a theme like minima)
+minima:
+  # Customization options for the minima theme
+  header_links:
+    - title: "Home"
+      url: "/"
+    - title: "About"
+      url: "/about/"
+
