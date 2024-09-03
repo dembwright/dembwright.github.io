@@ -47,6 +47,15 @@
             navLinks.classList.toggle('active');
         });
     </script>
+    <script>
+    // JavaScript to make external links open in a new tab
+    document.querySelectorAll('a[href^="http"]').forEach(anchor => {
+        if (anchor.hostname !== window.location.hostname) {
+            anchor.target = "_blank";
+            anchor.rel = "noopener noreferrer"; // For security reasons
+        }
+    });
+    </script>
 </body>
 </html>
 
