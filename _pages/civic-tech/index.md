@@ -1,5 +1,5 @@
 ---
-layout: topic
+layout: default
 title: "Civic Tech"
 permalink: /civic-tech/
 ---
