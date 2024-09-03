@@ -1,7 +1,7 @@
 ---
 layout: subpage
 title: "Open Data"
-permalink: /open-data.md
+permalink: civic-tech/open-data/
 ---
 # A list of major cities in each state and their Open Data Portals
 
