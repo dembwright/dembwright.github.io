@@ -3,54 +3,62 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #333;
     line-height: 1.6;
+    font-size: 16px;
 }
 
 /* Container */
 .container {
-    width: 80%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
 /* Header and Navigation */
 header {
-    background: #333;
+    background: #007bff; /* A vibrant blue color */
     color: #fff;
-    padding: 10px 0;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-links {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .nav-links li {
-    display: inline;
     margin-right: 20px;
 }
 
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #ccc;
+    color: #f8f9fa; /* Lighter hover color for better effect */
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
@@ -73,25 +81,27 @@ header {
 
 /* Main Content */
 main.content {
-    background: #fff;
-    padding: 20px;
+    background: #f8f9fa; /* Light gray background for contrast */
+    padding: 30px;
     margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More pronounced shadow for depth */
+    border-radius: 8px; /* Rounded corners for modern look */
 }
 
 h1 {
-    color: #333;
+    color: #007bff; /* Matches the header color */
+    font-size: 2.2em;
+    margin-bottom: 20px;
 }
 
 /* Footer */
 footer {
-    background: #333;
+    background: #007bff;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    padding: 20px 0;
     width: 100%;
-    bottom: 0;
+    position: static; /* Changed to static so it does not overlap content */
 }
 
 /* Responsive Styles */
@@ -99,6 +109,13 @@ footer {
     .nav-links {
         display: none;
         flex-direction: column;
+        width: 100%;
+        background-color: #007bff; /* Matches header for consistency */
+        padding: 10px 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .nav-links.active {
@@ -109,4 +126,3 @@ footer {
         display: flex;
     }
 }
-
