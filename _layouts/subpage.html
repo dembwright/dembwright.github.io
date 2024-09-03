@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
+                <ul class="nav-links">
+                    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                    <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+                    <li><a href="{{ '/ai-interests/' | relative_url }}">AI Interests</a></li>
+                    <li><a href="{{ '/podcasts/' | relative_url }}">Podcasts</a></li>
+                    <li><a href="{{ '/civic-tech/' | relative_url }}">Civic Tech</a></li>
+                    <li><a href="{{ '/blogs/' | relative_url }}">Blogs</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="container">
+            <h1>{{ page.title }}</h1>
+            <p>Explore the open data portals for each state in the US. Click on a link to access the corresponding open data portal.</p>
+            <div class="state-list">
+                {{ content }}
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle script
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
