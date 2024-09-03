@@ -150,7 +150,7 @@ Open Data Portals are important for governments at all scales. They improve tran
     - [Columbus](https://opendata.columbus.gov)
     - [Cleveland](https://data.clevelandohio.gov)
     - [Dayton](https://www.daytonohio.gov/350/Dayton-Open-Data)
-    - [Cincinnati](https://insights.cincinnati-oh.gov/stories/s/Cincinnati-INsights/s59x-yqy3)
+    - [Cincinnati](https://data.cincinnati-oh.gov)
     - [Toledo](https://data.toledo.gov)
 
 36. Oklahoma
