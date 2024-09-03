@@ -1,5 +1,5 @@
 ---
-layout: subpage
+layout: default
 title: "Open Data"
 permalink: civic-tech/open-data/
 ---
