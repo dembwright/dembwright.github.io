@@ -23,4 +23,13 @@ permalink: civic-tech/data-links/
 [re3data](https://www.re3data.org/search)
 - a bunch of research data sets
 
+[Nature](https://www.nature.com/sdata/policies/repositories)
+- datasets of different sciences
+
+[Pew Research Center](https://www.pewresearch.org/internet/datasets/)
+- the Pew Research Center datasets
+
+[GigaDB](http://gigadb.org)
+- life sciences data
+
 
